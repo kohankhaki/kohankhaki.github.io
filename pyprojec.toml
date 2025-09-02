@@ -1,0 +1,4 @@
+[project]
+name = "kohankhaki.github.io"
+version = "0.0.0"
+description = "Minimal static homepage."
