@@ -3,33 +3,67 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ML Research Engineer · Vector Institute</title>
-  <meta name="description" content="Minimal personal homepage. ML research engineer at Vector Institute. MSc UAlberta: RL, MBRL, search, model uncertainty. Photography on Unsplash. New hobby: records." />
+  <title>farnaz kohankhaki</title>
   <meta name="color-scheme" content="light dark">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="icon" href="assets/img/avatar.jpg">
+  <style>
+    :root { --fg:#111; --bg:#fff; --muted:#555; }
+    @media (prefers-color-scheme: dark) {
+      :root { --fg:#eaeaea; --bg:#0b0b0b; --muted:#9a9a9a; }
+    }
+    body {
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color: var(--fg); background: var(--bg);
+      line-height:1.6;
+    }
+    main {
+      max-width:60rem;
+      margin:10vh auto;
+      padding:1.5rem;
+      display:flex;
+      flex-wrap:wrap;
+      gap:2rem;
+      align-items:center;
+      justify-content:center;
+    }
+    .avatar {
+      flex:0 0 220px;
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 2px 6px rgba(0,0,0,0.15);
+    }
+    .avatar img {
+      width:100%;
+      height:auto;
+      display:block;
+    }
+    .text {
+      flex:1;
+      min-width:260px;
+    }
+    h1 {
+      margin:0 0 1rem;
+      font-size:clamp(1.8rem, 3vw, 2.4rem);
+    }
+    p { margin:0 0 0.85rem; font-size:1.05rem; }
+    a { color:inherit; text-underline-offset:.18em; }
+    a:hover { text-decoration-thickness:2px; }
+    small { color:var(--muted); }
+  </style>
 </head>
 <body>
   <main>
-    <div class="intro">
-      <img src="assets/img/avatar.jpg" alt="Profile photo" class="avatar" width="96" height="96" loading="eager" decoding="async">
-      <div>
-        <h1>Hi, I’m a machine learning research engineer at <span title="Vector Institute">Vector Institute</span>.</h1>
-        <p><small>Focused on building and evaluating ML systems.</small></p>
-      </div>
+    <div class="avatar">
+      <img src="assets/img/avatar.png" alt="Profile photo of Farnaz">
     </div>
-
-    <p>I completed my master’s at the University of Alberta, where I worked on <strong>reinforcement learning</strong> (RL), <strong>model-based RL</strong> (MBRL), <strong>search</strong>, and <strong>model uncertainty</strong>.</p>
-
-    <hr>
-
-    <p>I love photography — I publish on <a href="https://unsplash.com/@farnaz________" target="_blank" rel="noopener">Unsplash</a>.</p>
-    <p>New hobby: collecting records.</p>
-    <p>I am Harry Potter fan.</p>
-
-    <footer>
-      <p></p>
-    </footer>
+    <div class="text">
+      <h1>Farnaz Kohankhaki</h1>
+      <p>Machine learning research engineer at Vector Institute.</p>
+      <p>Master’s at the University of Alberta — worked on RL, MBRL, search, and model uncertainty.</p>
+      <p>I love photography: I publish on <a href="https://unsplash.com/@farnaz________" target="_blank" rel="noopener">Unsplash</a>.</p>
+      <p>New hobby: collecting records.</p>
+      <p>I’m a Harry Potter fan. My Friday evenings usually mean re-watching Harry Potter with a Talisman.</p>
+    </div>
   </main>
 </body>
 </html>
